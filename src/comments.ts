@@ -1,4 +1,3 @@
-// Comment Class
 class Comment {
     id: string;
     text: string;
@@ -23,8 +22,6 @@ class Comment {
         this.isFavorite = isFavorite;
     }
 }
-  
-// CommentManager Class
 class CommentManager {
     comments: Comment[];
 

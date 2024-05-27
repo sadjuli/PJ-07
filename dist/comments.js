@@ -1,4 +1,3 @@
-// Comment Class
 class Comment {
     constructor(id, text, parentId = null, date = new Date(), rating = 0, isFavorite = false) {
         this.id = id;
@@ -9,8 +8,6 @@ class Comment {
         this.isFavorite = isFavorite;
     }
 }
-  
-// CommentManager Class
 class CommentManager {
     constructor() {
         this.comments = JSON.parse(localStorage.getItem('comments')) || [];
@@ -87,7 +84,6 @@ function renderComments() {
             renderCommentItem(comment);
         }
     });
-    console.log(comments)
 }
 
 function renderCommentItem(comment, level = 0) {
